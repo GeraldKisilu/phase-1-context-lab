@@ -33,11 +33,14 @@ const createEmployeeRecord = function(row){
 };
 console.log(createEmployeeRecord);
 
-// let createEmployeeRecords = function(employeeRowData) {
-//     return employeeRowData.map(function(row){
-//         return createEmployeeRecord(row)
-//     })
-// }
+const createEmployeeRecords = function(employeeRowData) {
+    return employeeRowData.map(function(row){
+        return createEmployeeRecord(row)
+    })
+};
+console.log(createEmployeeRecords);
+
+
 
 // let createTimeInEvent = function(dateStamp){
 //     let [date, hour] = dateStamp.split(' ')
