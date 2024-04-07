@@ -32,3 +32,16 @@ function createEmployeeRecord(arr) {
     };
 }
 console.log(createEmployeeRecord);
+
+function createEmployeeRecord(arr) {
+    return {
+        firstName: arr[0],
+        lastName: arr[1],
+        role: arr[2],
+        yearsEmployed: arr[3]
+    };
+}
+function createEmployeeRecords(arr) {
+    return arr.map(createEmployeeRecord);
+}
+console.log(createEmployeeRecord);
