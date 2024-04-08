@@ -54,17 +54,17 @@ const createTimeInEvent = function(dateStamp){
     return this
 }
 
-// let createTimeOutEvent = function(dateStamp){
-//     let [date, hour] = dateStamp.split(' ')
+let createTimeOutEvent = function(dateStamp){
+    // let [date, hour] = dateStamp.split(' ')
 
-//     this.timeOutEvents.push({
-//         type: "TimeOut",
-//         hour: parseInt(hour, 10),
-//         date,
-//     })
+    // this.timeOutEvents.push({
+    //     type: "TimeOut",
+    //     hour: parseInt(hour, 10),
+    //     date,
+    // })
 
-//     return this
-// }
+    // return this
+}
 
 // let hoursWorkedOnDate = function(soughtDate){
 //     let inEvent = this.timeInEvents.find(function(e){
