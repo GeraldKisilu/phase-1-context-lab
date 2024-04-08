@@ -42,7 +42,7 @@ console.log(createEmployeeRecords);
 
 
 
-let createTimeInEvent = function(dateStamp){
+const createTimeInEvent = function(dateStamp){
     let [date, hour] = dateStamp.split(' ')
 
     this.timeInEvents.push({
