@@ -65,7 +65,8 @@ const createTimeOutEvent = function(dateStamp){
     })
 
     return this
-}
+};
+console.log(createTimeOutEvent);
 
 // let hoursWorkedOnDate = function(soughtDate){
 //     let inEvent = this.timeInEvents.find(function(e){
