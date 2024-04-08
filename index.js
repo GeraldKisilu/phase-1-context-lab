@@ -101,11 +101,12 @@ const allWagesFor = function(){
 };
 console.log(allWagesFor);
 
-// let findEmployeeByFirstName = function(srcArray, firstName) {
-//   return srcArray.find(function(rec){
-//     return rec.firstName === firstName
-//   })
-// }
+const findEmployeeByFirstName = function(srcArray, firstName) {
+  return srcArray.find(function(rec){
+    return rec.firstName === firstName
+  })
+};
+console.log(findEmployeeByFirstName);
 
 // let calculatePayroll = function(arrayOfEmployeeRecords){
 //     return arrayOfEmployeeRecords.reduce(function(memo, rec){
