@@ -68,17 +68,18 @@ const createTimeOutEvent = function(dateStamp){
 };
 console.log(createTimeOutEvent);
 
-// let hoursWorkedOnDate = function(soughtDate){
-//     let inEvent = this.timeInEvents.find(function(e){
-//         return e.date === soughtDate
-//     })
+const hoursWorkedOnDate = function(soughtDate){
+    // let inEvent = this.timeInEvents.find(function(e){
+    //     return e.date === soughtDate
+    // })
 
-//     let outEvent = this.timeOutEvents.find(function(e){
-//         return e.date === soughtDate
-//     })
+    // let outEvent = this.timeOutEvents.find(function(e){
+    //     return e.date === soughtDate
+    // })
 
-//     return (outEvent.hour - inEvent.hour) / 100
-// }
+    // return (outEvent.hour - inEvent.hour) / 100
+};
+console.log(hoursWorkedOnDate);
 
 // let wagesEarnedOnDate = function(dateSought){
 //     let rawWage = hoursWorkedOnDate.call(this, dateSought)
