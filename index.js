@@ -52,18 +52,19 @@ const createTimeInEvent = function(dateStamp){
     })
 
     return this
-}
+};
+console.log(createTimeInEvent);
 
-let createTimeOutEvent = function(dateStamp){
-    // let [date, hour] = dateStamp.split(' ')
+const createTimeOutEvent = function(dateStamp){
+    let [date, hour] = dateStamp.split(' ')
 
-    // this.timeOutEvents.push({
-    //     type: "TimeOut",
-    //     hour: parseInt(hour, 10),
-    //     date,
-    // })
+    this.timeOutEvents.push({
+        type: "TimeOut",
+        hour: parseInt(hour, 10),
+        date,
+    })
 
-    // return this
+    return this
 }
 
 // let hoursWorkedOnDate = function(soughtDate){
