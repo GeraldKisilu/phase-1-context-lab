@@ -43,15 +43,15 @@ console.log(createEmployeeRecords);
 
 
 let createTimeInEvent = function(dateStamp){
-    // let [date, hour] = dateStamp.split(' ')
+    let [date, hour] = dateStamp.split(' ')
 
-    // this.timeInEvents.push({
-    //     type: "TimeIn",
-    //     hour: parseInt(hour, 10),
-    //     date,
-    // })
+    this.timeInEvents.push({
+        type: "TimeIn",
+        hour: parseInt(hour, 10),
+        date,
+    })
 
-    // return this
+    return this
 }
 
 // let createTimeOutEvent = function(dateStamp){
