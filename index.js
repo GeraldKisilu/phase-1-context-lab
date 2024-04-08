@@ -81,23 +81,25 @@ const hoursWorkedOnDate = function(soughtDate){
 };
 console.log(hoursWorkedOnDate);
 
-// let wagesEarnedOnDate = function(dateSought){
-//     let rawWage = hoursWorkedOnDate.call(this, dateSought)
-//         * this.payPerHour
-//     return parseFloat(rawWage.toString())
-// }
+const wagesEarnedOnDate = function(dateSought){
+    let rawWage = hoursWorkedOnDate.call(this, dateSought)
+        * this.payPerHour
+    return parseFloat(rawWage.toString())
+};
+console.log(wagesEarnedOnDate);
 
-// let allWagesFor = function(){
-//     let eligibleDates = this.timeInEvents.map(function(e){
-//         return e.date
-//     })
+const allWagesFor = function(){
+    let eligibleDates = this.timeInEvents.map(function(e){
+        return e.date
+    })
 
-//     let payable = eligibleDates.reduce(function(memo, d){
-//         return memo + wagesEarnedOnDate.call(this, d)
-//     }.bind(this), 0)
+    let payable = eligibleDates.reduce(function(memo, d){
+        return memo + wagesEarnedOnDate.call(this, d)
+    }.bind(this), 0)
 
-//     return payable
-// }
+    return payable
+};
+console.log(allWagesFor);
 
 // let findEmployeeByFirstName = function(srcArray, firstName) {
 //   return srcArray.find(function(rec){
