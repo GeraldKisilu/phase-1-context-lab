@@ -108,8 +108,9 @@ const findEmployeeByFirstName = function(srcArray, firstName) {
 };
 console.log(findEmployeeByFirstName);
 
-// let calculatePayroll = function(arrayOfEmployeeRecords){
-//     return arrayOfEmployeeRecords.reduce(function(memo, rec){
-//         return memo + allWagesFor.call(rec)
-//     }, 0)
-// }
+const calculatePayroll = function(arrayOfEmployeeRecords){
+    return arrayOfEmployeeRecords.reduce(function(memo, rec){
+        return memo + allWagesFor.call(rec)
+    }, 0)
+};
+console.log(calculatePayroll);
